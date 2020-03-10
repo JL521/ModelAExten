@@ -12,7 +12,7 @@ public extension CTMediator {
     @objc func A_showSwift(callback:@escaping (String) -> Void) -> UIViewController? {
         let params = [
             "callback":callback,
-            kCTMediatorParamsKeySwiftTargetModuleName:"A_swift"
+            kCTMediatorParamsKeySwiftTargetModuleName:"ModelA"
             ] as [AnyHashable : Any]
         if let viewController = self.performTarget("A", action: "Extension_ViewController", params: params, shouldCacheTarget: false) as? UIViewController {
             return viewController
