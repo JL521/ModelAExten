@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ModelAExten_Example' do
+  pod 'ModelAExten', :path => '../'
+
+  target 'ModelAExten_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase' , '~> 2.1.4'
+  end
+end
