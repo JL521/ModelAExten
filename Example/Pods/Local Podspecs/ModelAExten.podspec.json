@@ -1,0 +1,29 @@
+{
+  "name": "ModelAExten",
+  "version": "0.1.0",
+  "summary": "组件化测试.",
+  "swift_versions": "5",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/JL521/ModelAExten",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "JL521": "314886745@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/JL521/ModelAExten.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "ModelAExten/Classes/**/*",
+  "dependencies": {
+    "CTMediator": [
+
+    ]
+  },
+  "swift_version": "5"
+}

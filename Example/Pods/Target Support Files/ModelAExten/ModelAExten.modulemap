@@ -1,0 +1,6 @@
+framework module ModelAExten {
+  umbrella header "ModelAExten-umbrella.h"
+
+  export *
+  module * { export * }
+}

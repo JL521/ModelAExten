@@ -1,0 +1,32 @@
+PODS:
+  - CTMediator (26)
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - ModelAExten (0.1.0):
+    - CTMediator
+
+DEPENDENCIES:
+  - FBSnapshotTestCase (~> 2.1.4)
+  - ModelAExten (from `../`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - CTMediator
+  trunk:
+    - FBSnapshotTestCase
+
+EXTERNAL SOURCES:
+  ModelAExten:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CTMediator: 22d631107cb27f2c792c766e50e580ef35530c36
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  ModelAExten: c24afef3f218e6e1a44daedd77555ef63a978e1d
+
+PODFILE CHECKSUM: 3045a3f81f99da2363b66992313e5785d6f143b5
+
+COCOAPODS: 1.9.0

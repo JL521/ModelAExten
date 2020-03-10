@@ -30,8 +30,8 @@
 /* Begin PBXFileReference section */
 		04EFEEEE0D9F39F0FA0C3C5B /* Pods-ModelAExten_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModelAExten_Example.debug.xcconfig"; path = "Target Support Files/Pods-ModelAExten_Example/Pods-ModelAExten_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		0B6493E5B5C2C4BC34A16299 /* Pods_ModelAExten_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ModelAExten_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		22DA1730092DB0AF3AA55A8E /* ModelAExten.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ModelAExten.podspec; path = ../ModelAExten.podspec; sourceTree = "<group>"; };
-		2D7D927B45683259C73CAA65 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		22DA1730092DB0AF3AA55A8E /* ModelAExten.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ModelAExten.podspec; path = ../ModelAExten.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		2D7D927B45683259C73CAA65 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		3CF4DF09B786E2C6D774BC75 /* Pods-ModelAExten_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModelAExten_Example.release.xcconfig"; path = "Target Support Files/Pods-ModelAExten_Example/Pods-ModelAExten_Example.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* ModelAExten_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModelAExten_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -44,7 +44,7 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		C2FE1F413B317B7C2DC35527 /* Pods_ModelAExten_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ModelAExten_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CC73EA5C999C052E4338AB73 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		CC73EA5C999C052E4338AB73 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		DAA9D0EF40AC78B89467AB8E /* Pods-ModelAExten_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModelAExten_Tests.release.xcconfig"; path = "Target Support Files/Pods-ModelAExten_Tests/Pods-ModelAExten_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		F25D06FE237211D53EDF361D /* Pods-ModelAExten_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModelAExten_Tests.debug.xcconfig"; path = "Target Support Files/Pods-ModelAExten_Tests/Pods-ModelAExten_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -147,7 +147,6 @@
 				F25D06FE237211D53EDF361D /* Pods-ModelAExten_Tests.debug.xcconfig */,
 				DAA9D0EF40AC78B89467AB8E /* Pods-ModelAExten_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -228,6 +227,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -310,10 +310,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ModelAExten_Example/Pods-ModelAExten_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CTMediator/CTMediator.framework",
 				"${BUILT_PRODUCTS_DIR}/ModelAExten/ModelAExten.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CTMediator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ModelAExten.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

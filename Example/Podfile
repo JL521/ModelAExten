@@ -1,6 +1,8 @@
-use_frameworks!
+source 'https://github.com/CocoaPods/Specs.git'
+
 
 target 'ModelAExten_Example' do
+  use_frameworks!
   pod 'ModelAExten', :path => '../'
 
   target 'ModelAExten_Tests' do
