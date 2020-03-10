@@ -20,7 +20,7 @@ public extension CTMediator {
         return nil
     }
     
-    @objc public func A_showObjc(callback:@escaping (String) -> Void) -> UIViewController? {
+    @objc func A_showObjc(callback:@escaping (String) -> Void) -> UIViewController? {
         let callbackBlock = callback as @convention(block) (String) -> Void
         let callbackBlockObject = unsafeBitCast(callbackBlock, to: AnyObject.self)
         let params = ["callback":callbackBlockObject] as [AnyHashable:Any]
