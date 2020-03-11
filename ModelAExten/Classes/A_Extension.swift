@@ -14,6 +14,7 @@ public extension CTMediator {
             "callback":callback,
             kCTMediatorParamsKeySwiftTargetModuleName:"ModelA"
             ] as [AnyHashable : Any]
+        print(params)
         if let viewController = self.performTarget("A", action: "Extension_ViewController", params: params, shouldCacheTarget: false) as? UIViewController {
             return viewController
         }
