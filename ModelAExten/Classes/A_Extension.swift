@@ -21,6 +21,54 @@ public extension CTMediator {
         return nil
     }
     
+    @objc func A_UserJob_ViewController(callback:@escaping (String) -> Void) -> UIViewController? {
+        let params = [
+            "callback":callback,
+            kCTMediatorParamsKeySwiftTargetModuleName:"ModelA"
+            ] as [AnyHashable : Any]
+        print(params)
+        if let viewController = self.performTarget("A", action: "UserJob_ViewController", params: params, shouldCacheTarget: false) as? UIViewController {
+            return viewController
+        }
+        return nil
+    }
+    
+    @objc func A_UserFindJob_ViewController(callback:@escaping (String) -> Void) -> UIViewController? {
+        let params = [
+            "callback":callback,
+            kCTMediatorParamsKeySwiftTargetModuleName:"ModelA"
+            ] as [AnyHashable : Any]
+        print(params)
+        if let viewController = self.performTarget("A", action: "UserFindJob_ViewController", params: params, shouldCacheTarget: false) as? UIViewController {
+            return viewController
+        }
+        return nil
+    }
+    
+    @objc func A_QYJob_ViewController(callback:@escaping (String) -> Void) -> UIViewController? {
+        let params = [
+            "callback":callback,
+            kCTMediatorParamsKeySwiftTargetModuleName:"ModelA"
+            ] as [AnyHashable : Any]
+        print(params)
+        if let viewController = self.performTarget("A", action: "QYJob_ViewController", params: params, shouldCacheTarget: false) as? UIViewController {
+            return viewController
+        }
+        return nil
+    }
+    
+    @objc func A_QYFindPeople_ViewController(callback:@escaping (String) -> Void) -> UIViewController? {
+        let params = [
+            "callback":callback,
+            kCTMediatorParamsKeySwiftTargetModuleName:"ModelA"
+            ] as [AnyHashable : Any]
+        print(params)
+        if let viewController = self.performTarget("A", action: "QYFindPeople_ViewController", params: params, shouldCacheTarget: false) as? UIViewController {
+            return viewController
+        }
+        return nil
+    }
+    
     @objc func A_showObjc(callback:@escaping (String) -> Void) -> UIViewController? {
         let callbackBlock = callback as @convention(block) (String) -> Void
         let callbackBlockObject = unsafeBitCast(callbackBlock, to: AnyObject.self)
