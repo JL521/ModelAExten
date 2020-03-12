@@ -21,10 +21,11 @@ public extension CTMediator {
         return nil
     }
     
-    @objc func A_UserJob_ViewController(callback:@escaping (String) -> Void) -> UIViewController? {
+    @objc func A_UserJob_ViewController(callback:@escaping (String) -> Void,token:String="") -> UIViewController? {
         let params = [
             "callback":callback,
-            kCTMediatorParamsKeySwiftTargetModuleName:"ModelA"
+            kCTMediatorParamsKeySwiftTargetModuleName:"ModelA",
+            "token":token
             ] as [AnyHashable : Any]
         print(params)
         if let viewController = self.performTarget("A", action: "UserJob_ViewController", params: params, shouldCacheTarget: false) as? UIViewController {
@@ -33,10 +34,11 @@ public extension CTMediator {
         return nil
     }
     
-    @objc func A_UserFindJob_ViewController(callback:@escaping (String) -> Void) -> UIViewController? {
+    @objc func A_UserFindJob_ViewController(callback:@escaping (String) -> Void,token:String="") -> UIViewController? {
         let params = [
             "callback":callback,
-            kCTMediatorParamsKeySwiftTargetModuleName:"ModelA"
+            kCTMediatorParamsKeySwiftTargetModuleName:"ModelA",
+            "token":token
             ] as [AnyHashable : Any]
         print(params)
         if let viewController = self.performTarget("A", action: "UserFindJob_ViewController", params: params, shouldCacheTarget: false) as? UIViewController {
@@ -45,10 +47,11 @@ public extension CTMediator {
         return nil
     }
     
-    @objc func A_QYJob_ViewController(callback:@escaping (String) -> Void) -> UIViewController? {
+    @objc func A_QYJob_ViewController(callback:@escaping (String) -> Void,token:String="") -> UIViewController? {
         let params = [
             "callback":callback,
-            kCTMediatorParamsKeySwiftTargetModuleName:"ModelA"
+            kCTMediatorParamsKeySwiftTargetModuleName:"ModelA",
+            "token":token
             ] as [AnyHashable : Any]
         print(params)
         if let viewController = self.performTarget("A", action: "QYJob_ViewController", params: params, shouldCacheTarget: false) as? UIViewController {
@@ -57,10 +60,11 @@ public extension CTMediator {
         return nil
     }
     
-    @objc func A_QYFindPeople_ViewController(callback:@escaping (String) -> Void) -> UIViewController? {
+    @objc func A_QYFindPeople_ViewController(callback:@escaping (String) -> Void,token:String="") -> UIViewController? {
         let params = [
             "callback":callback,
-            kCTMediatorParamsKeySwiftTargetModuleName:"ModelA"
+            kCTMediatorParamsKeySwiftTargetModuleName:"ModelA",
+            "token":token
             ] as [AnyHashable : Any]
         print(params)
         if let viewController = self.performTarget("A", action: "QYFindPeople_ViewController", params: params, shouldCacheTarget: false) as? UIViewController {
